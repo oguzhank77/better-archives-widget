@@ -67,7 +67,7 @@ class Baw_Widgetarchives_Widget_My_Archives extends WP_Widget {
 					<?php
 				} ?>
 				<li class="baw-month">
-					<a href="<?php echo esc_url( get_month_link( $month->year, $month->numMonth ) ); ?>"><?php echo esc_html( $month->month . ' ' . $month->year ); ?></a>
+					<a href="<?php echo esc_url( get_month_link( $month->year, $month->numMonth ) ); ?>"><?php echo esc_html( $month->month . ' ' . $month->year . ' (' . $month->post_count . ')' ); ?></a>
 				</li>
 				<?php
 				$prevYear = $month->year;
